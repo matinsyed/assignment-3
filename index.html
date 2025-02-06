@@ -20,11 +20,23 @@
         .sora-font {
             font-family: "Sora", serif;
             }
-        #banner-bg{          
-            background-image: url("/images/cat-big.png");
+        .banner-bg{          
+            background-image: url("./images/cat-big.png");
             background-repeat: no-repeat;
-            height: 749px;
-            width: 1320px;            
+            background-size: 400px;
+            background-position: center;
+        }
+        .banner-bg-md{          
+            background-image: url("./images/cat-big.png");
+            background-repeat: no-repeat;
+            background-size: 700px; 
+            background-position: center;
+        }
+        .banner-bg-lg{          
+            background-image: url("./images/cat-big.png");
+            background-repeat: no-repeat;
+            background-size: 1200px;
+            background-position: center;
         }
     </style>
 </head>
@@ -32,7 +44,7 @@
     <header>
         <!-- navbar section -->
         <nav>
-            <div class="navbar bg-[#FFF9F4] px-3 lg:px-40">
+            <div class="navbar bg-[#FFF9F4] px-3 lg:px-40 mx-auto">
                 <div class="navbar-start">
                     <img src="./images/logo-header.png" alt="">
                     <a class="btn btn-ghost text-xl hidden md:flex">Browse<span class="text-[#FFDC26]">4</span> Pets</a>                  
@@ -44,7 +56,7 @@
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end hidden md:flex gap-2">
+                <div class="navbar-end hidden md:flex gap-2 sm:flex-1">
                     <a class="btn btn-outline btn-warning">Login</a>
                     <a class="btn bg-[#FFDC26]">Register</a>
                 </div>
@@ -55,21 +67,60 @@
         </nav>
         <!-- banner -->
          <div class="lg:px-40 pt-10">
-            <div id="banner-bg" class="h-[800px]">
-                <h2>
-                    Pamper Your Pet, Because They Deserve the Bes
-                </h2>
-                <p>
-                    Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
-                </p>
-                <button class="btn btn-warning">Find a pet</button>
+            <div id="" class=" min-h-[400px] sm:banner-bg md: banner-bg-md lg:banner-bg-lg  ">
+                <div class="w-[50%]">
+                    <h2 class="adlam-font text-5xl">
+                        Pamper Your Pet, Because They Deserve the Bes
+                    </h2>
+                    <p class="text-sm my-5">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="btn bg-[#FFDC26]">Find a pet</button>
+                </div>
             </div>
                
          </div>
     </header>    
      <!-- main section -->
      <main>
+        <!-- Categories section -->
+         <div class="lg:px-40">
+            <h2>
+                Browse By Categories
+            </h2>
+            <div class="w-48 h-32">
+                <div class="card bg-[#F9DF8A]">
+                    <div class="avatar px-5 pt-5">
+                        <div class="w-20 bg-[white] rounded-full ">
+                            <div class="w-12 align-middle">
+                                <img class="" src="./images/dog-cartoon.png" />
+                            </div>
+                        </div>
+                      </div>                    
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Dog</h2>
+                      <p>3 items</p>
+                    </div>
+                  </div>
+            </div>
 
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              
+         </div>
      </main>
      <!-- footer section -->
      <footer>
