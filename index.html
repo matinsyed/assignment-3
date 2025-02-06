@@ -38,6 +38,12 @@
             background-size: 1200px;
             background-position: center;
         }
+        .trending-bg{
+            background-image: url("./images/cute-pet-mid.png");
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position:bottom right;
+        }
     </style>
 </head>
 <body class="sora-font">
@@ -84,43 +90,133 @@
      <!-- main section -->
      <main>
         <!-- Categories section -->
-         <div class="lg:px-40">
-            <h2>
+         <div class="lg:px-40 space-y-12 my-32">
+            <h2 class="adlam-font text-4xl">
                 Browse By Categories
             </h2>
-            <div class="w-48 h-32">
-                <div class="card bg-[#F9DF8A]">
-                    <div class="avatar px-5 pt-5">
-                        <div class="w-20 bg-[white] rounded-full ">
-                            <div class="w-12 align-middle">
-                                <img class="" src="./images/dog-cartoon.png" />
-                            </div>
-                        </div>
-                      </div>                    
+            <div class="grid gap-3 grid-flow-col grid-rows-3 md:grid-rows-2 lg:grid-rows-1">
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)] bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/dog-cartoon.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Dog</h2>
-                      <p>3 items</p>
+                      <p>3 items</p>                  
                     </div>
-                  </div>
-            </div>
-
-            <div class="card bg-base-100 w-96 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                    class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
                 </div>
-              </div>
-              
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)] bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/fish-cartoon.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Fish</h2>
+                      <p>3 items</p>                  
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)] bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/cat-cartoon.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Cat</h2>
+                      <p>3 items</p>                  
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)] bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/bird-cartoon.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Birds</h2>
+                      <p>3 items</p>                  
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)] bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/cute-pet-small.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Small pet</h2>
+                      <p>3 items</p>                  
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-52 h-64 drop-shadow-[rgba(0, 0, 0, 0.25)]  bg-[#F9DF8A] relative">
+                    <div class="">
+                        <figure class="mx-auto pt-12">
+                            <div class="w-28 h-28 border bg-[white] rounded-full">
+                                <img
+                                    src="./images/rabbit-cartoon.png" 
+                                    alt="Dog"
+                                    class="size-20 pt-6 pl-6" 
+                                /> 
+                            </div>                        
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rabit</h2>
+                      <p>2 items</p>                  
+                    </div>
+                </div>
+            </div>
          </div>
+         <!-- Trending Section -->
+         <section class="bg-[#FFF9F4] h-[750px] w-full p-32 space-y-12">
+            <h2 class="adlam-font text-4xl">Trending Pet Products</h2>
+            <!-- Trending Card Container -->
+            <div>
+                <div class="h-96 w-96 bg-[#F9DF8A] trending-bg rounded-xl">
+                    <div class="pl-8 pt-12 space-y-5 ">
+                        <h2 class="adlam-font text-4xl">T- Shirt For Dogs</h2>
+                        <p class="">Discover a world of treats, toys, and essentials handpicked for </p>
+                        <button class="btn text-sm">Shop Now</button>                       
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
+         </section>
      </main>
      <!-- footer section -->
      <footer>
